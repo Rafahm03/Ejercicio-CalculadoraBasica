@@ -36,7 +36,11 @@ public class Principal {
 						suma=num1+num2;
 						break;
 					case 2:
-						
+						System.out.println("Dime un numero");
+						num1=Leer.datoInt();
+						System.out.println("Dime otro");
+						num2=Leer.datoInt();
+						resta=num1-num2;
 						break;
 					case 3:
 						
@@ -51,5 +55,6 @@ public class Principal {
 						System.out.println("Esa opción no está disponible");
 						break;
 
+}
 }
 }
