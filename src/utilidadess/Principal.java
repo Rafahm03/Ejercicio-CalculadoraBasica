@@ -6,9 +6,10 @@ public class Principal {
 		// TODO Auto-generated method stub
 
 		int op=0;
-		int num1=0, num2=0;
+		int num1=0, num2=0, suma=0, resta=0, multiplicar=0;
+		double division=0;
 		
-		do {
+		
 				System.out.println("------------------------------");
 				System.out.println("············MENU··············");
 				System.out.println("------------------------------");
@@ -22,13 +23,17 @@ public class Principal {
 				System.out.println("------------------------------");
 				System.out.println("¿Qué operación desea realizar?");
 				op=Leer.datoInt();
-					switch (op) {
+				switch (op) {
 					
 					case 0:
 						System.out.println("SALIENDO...");
 						break;
 					case 1:
 						System.out.println("dime un número");
+						num1=Leer.datoInt();
+						System.out.println("dime otro numero");
+						num2=Leer.datoInt();
+						suma=num1+num2;
 						break;
 					case 2:
 						
@@ -45,10 +50,6 @@ public class Principal {
 					default:
 						System.out.println("Esa opción no está disponible");
 						break;
-				
-		} while (op!=0);
-		
-	}
 
 }
 }
